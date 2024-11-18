@@ -14,16 +14,24 @@
 <body>
     <div id="home-page" class="page">
         <!-- Top Navigation and Logo -->
-        <header class="top-navigation">
+        <div class="top-navigation">
             <div class="logo-summary">
-                <h1>SoulReflect</h1>
-                <p>Your journey to self-discovery and emotional well-being starts here.</p>
+                <h1>AI Journal</h1>
+                <p>Reflect and Grow</p>
             </div>
             <div class="nav-buttons">
-                <button onclick="navigateTo('about')">About</button>
-                <button onclick="navigateTo('main-journaling')">Journaling</button>
+                <button id="home-button">Home</button>
+                <button id="about-button">About</button>
+                <button id="word-cloud-button">Word Cloud</button>
             </div>
-        </header>
+        </div>
+        
+        <div id="word-cloud-page" class="hidden">
+            <h2>Word Cloud</h2>
+            <canvas id="word-cloud-canvas"></canvas>
+            <button class="back-home" id="back-to-main">Back to Main</button>
+        </div>
+
     
         <!-- Main Content with Title and Prompts -->
         <div class="home-content">
