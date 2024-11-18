@@ -550,7 +550,7 @@ body, html {
     text-align: center;
 }
 
-
+/*
 #word-cloud-section {
     margin: 20px 0;
     padding: 20px;
@@ -585,6 +585,47 @@ body, html {
 .close-word-cloud-btn:hover {
     background-color: #d1b3ff;
     transform: scale(1.05);
+}
+*/
+/* Word Cloud Page */
+#word-cloud-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #fff;
+    padding: 20px;
+}
+
+#word-cloud-page h2 {
+    font-size: 2em;
+    color: #e6ccff;
+}
+
+#word-cloud-canvas {
+    max-width: 90%;
+    max-height: 70%;
+    background-color: #444;
+    border: 1px solid #d1b3ff;
+    border-radius: 10px;
+}
+
+#word-cloud-button {
+    padding: 10px 20px;
+    background-color: #8f78b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#word-cloud-button:hover {
+    background-color: #a97bcc;
 }
 
 @keyframes fadeOut {
